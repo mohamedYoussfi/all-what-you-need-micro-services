@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../inventory-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
+  </component>
+</project>
