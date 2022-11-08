@@ -1,0 +1,60 @@
+> vault server -dev
+========================================================================
+WARNING! dev mode is enabled! In this mode, Vault runs entirely in-memory
+and starts unsealed with a single unseal key. The root token is already
+authenticated to the CLI, so you can immediately begin using Vault.
+
+You may need to set the following environment variables:
+
+PowerShell:
+    $env:VAULT_ADDR="http://127.0.0.1:8200"
+cmd.exe:
+    set VAULT_ADDR=http://127.0.0.1:8200
+
+The unseal key and root token are displayed below in case you want to
+seal/unseal the Vault or re-authenticate.
+
+Unseal Key: SYk9wnXF/89nN5mHWMjwvUaBZqad64WvO9pvHtr09k0=
+Root Token: hvs.TWuG1DUdSAV1h9jX2VWxuvDE
+
+Development mode should NOT be used in production installations!
+
+===============================================================
+
+> set VAULT_ADDR=http://127.0.0.1:8200
+> vault kv put secret/vault-ms user.username=root user.password=1234
+=====================================
+==== Secret Path ====
+secret/data/vault-ms
+
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2022-11-05T08:46:45.8435569Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+=====================================
+
+> vault kv get secret/vault-ms
+
+==================================
+==== Secret Path ====
+secret/data/vault-ms
+
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2022-11-05T08:46:45.8435569Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+
+======== Data ========
+Key              Value
+---              -----
+user.password    1234
+user.username    root
+==================================

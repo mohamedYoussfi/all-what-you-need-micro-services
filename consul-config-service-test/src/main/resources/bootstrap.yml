@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: test-service
+spring.cloud.vault:
+  host: localhost
+  port: 8200
+  scheme: http
+  uri: http://localhost:8200
+  connection-timeout: 5000
+  read-timeout: 15000
+  authentication: TOKEN
+  token: hvs.JlliRG1MqI86QdEFOYafFGmP

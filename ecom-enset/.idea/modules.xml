@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../billing/billing.iml" filepath="$PROJECT_DIR$/../billing/billing.iml" />
       <module fileurl="file://$PROJECT_DIR$/../config-service/config-service.iml" filepath="$PROJECT_DIR$/../config-service/config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../customer-service/customer-service.iml" filepath="$PROJECT_DIR$/../customer-service/customer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecom-enset.iml" filepath="$PROJECT_DIR$/ecom-enset.iml" />

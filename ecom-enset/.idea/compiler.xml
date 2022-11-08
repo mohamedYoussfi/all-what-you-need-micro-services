@@ -12,9 +12,11 @@
         <module name="order-service" />
         <module name="customer-service" />
         <module name="gateway-service" />
+        <module name="billing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="billing" target="17" />
       <module name="config-service" target="17" />
       <module name="customer-service" target="17" />
       <module name="gateway-service" target="17" />
@@ -24,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billing" options="-parameters" />
       <module name="config-service" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
